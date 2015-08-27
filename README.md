@@ -1,3 +1,6 @@
-# COE
-All COE sharing files
-add jason selection and the info for the first week
+
+该库存放所有的COE资料， 包括源代码， PPT， 相关书籍等。
+大家上传源代码的时候不要压缩， 直接上传就好，这样方便别人直接查阅。
+书籍请上传PDF格式的。
+
+如有问题请联系skype账号：phiso.hu
