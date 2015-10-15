@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expedia_DB>
+
+<input>
+<user_name>//*[@id="signin-loginid"]</user_name>
+
+<password>//*[@id="login-form-password-label2"]</password>
+
+</input>
+
+<button>
+
+  <sing>//*[@id="submitButton"]</sing>
+  
+</button>
+
+</expedia_DB>
