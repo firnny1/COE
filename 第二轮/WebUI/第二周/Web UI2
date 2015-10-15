@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>驴游网</title>
+<style type="text/css">
+
+body{
+	background-image:url(materials/shell.jpg);
+	background-size:cover;
+	background-color:#993333;
+	background-attachment:fixed;
+	margin:0;
+	width:95vw;
+	height:100vh;
+	//padding-left:5vw;
+	//padding-right:0;
+   }
+   
+div#contents{
+	width:75%;
+	height:100vh;
+}
+
+div#header{
+	width:100%;
+	height:5%;
+	float:left;
+	border-radius:50px 50px 0px 0px;
+	box-shadow: 5px 5px 2px #282828;
+}
+div.con{
+	background-color:#F0F0F0;
+	opacity:0.8;
+	width:100%;
+	float:left;
+	box-shadow: 5px 5px 2px #282828;
+	padding-bottom:30px;
+}
+.tabs{
+	margin-top:20vh;
+	float:right;
+	text-align:center;
+	border-radius:10px 10px 10px 10px;
+}
+
+#header, .tabs{
+	background-color:#F0F0F0;
+	opacity:0.8;
+}
+
+ul{
+	list-style:none;
+	padding:0px;
+}
+
+li{
+	margin-top:5px;
+}
+.con div{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2%;
+	width:95%;
+	heigth:200px;
+	clear:both;
+	box-shadow:0px 3px 2px #C0C0C0;
+}
+#season_hot img{
+	border-radius:100px;
+	vertical-align:middle;
+}
+#local_special img{
+	border-radius:80px;
+	vertical-align:middle;
+}
+#common img{
+	
+	vertical-align:middle;
+}
+
+#special img{
+	
+	vertical-align:middle;
+}
+
+#classic img{
+	
+	vertical-align:middle;
+}
+
+#domestic img{
+	
+	vertical-align:middle;
+}
+
+#foreign img{
+	
+	vertical-align:middle;
+}
+
+#travel_hot img{
+	
+	vertical-align:middle;
+}
+</style>
+<script type="text/javascript">
+var index=0;
+window.onload=function (){
+var ul=document.getElementById("navigation");
+var tab=ul.getElementsByTagName("li");
+var contents=document.getElementById("contents");
+var con=contents.getElementsByClassName("con");
+
+for(var i=0; i<tab.length; i++){
+	tab[i].index=i;
+	tab[i].onclick=function (){
+		tab[index].className="";
+		con[index].style.display="none";
+		this.className="select";
+		con[this.index].style.display="block";
+		index=this.index;
+	}
+}
+}
+</script>
+<script type="text/javascript" src="D:/PCOE/script.js"></script>
+</head>
+
+<body>
+	<div class="tabs">
+		<ul id="navigation">
+			<li id="travel">
+				<a href="#">
+					<img src="materials/footprint.png" alt="Footprint" width="80" height="80"/>
+				</a>
+			</li>
+			<li class="select" id="food">
+				<a href="#">
+					<img src="materials/froks.png" alt="Forks" width="80" height="80"/>
+				</a>
+			</li>
+			<li id="book">
+				<a href="#">
+					<img src="materials/book.png" alt="Books" width="70" height="70"/>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="contents" style="margin:0 auto;">
+		<div id="header">
+			<ul style="padding:10px 10px 0px 10px; margin:auto auto 0 auto; ">
+				<li style="display:inline; padding:0 5px"><a href="#">Homepage</a></li>
+				<li style="display:inline;"><a href="#">My collection</a></li>
+			</ul>
+		</div>
+        <div class="con" style="display:block;">
+		<div id="domestic" style="background-color:#E0E0E0;">
+				<img width="300" height="200" src="materials/jiuzhaigou.jpg"></img>
+				<span><a href="http://jiuzhai.com/" >点亮.天籁.九寨沟</a></span>
+				<img width="380" height="200" src="materials/huashan.jpg"></img>
+				<span><a href="http://www.sxhuashan.com/" >奇险天下第一山</a></span>
+			</div>
+			<div id="foreign" style="background-color:#CCCCFF">
+				<img width="350" height="200" src="materials/aiqinhai.jpg"></img>
+				<span><a href="http://www.aegeangreece.com.cn/Index.Asp" >让浪漫无处不在-爱琴海</a></span>
+				<img width="300" height="200" src="materials/pujidao.jpg"></img>
+				<span><a href="http://www.amazingthailand.org.cn/index.php?a=shows&catid=110&id=23" >面朝大海-普吉岛</a></span>
+			</div>
+			<div id="travel_hot" style="background-color:#FFCCFF;">
+				<img width="320" height="200" src="materials/qingdao1.jpg"></img>
+				<img width="320" height="200" src="materials/qingdao2.jpg"></img>
+				<span><a href="http://www.qdta.gov.cn/" >热门旅游：山东大虾欢迎你！</a></span>
+			</div>
+			</div>
+		<div class="con" style="display:none;">
+			<div id="season_hot" style="background-color:#E0E0E0;">
+				<img width="250" height="200" src="materials/ice cream.png"></img>
+				<span>Summer dilicious!</span>
+				<img width="250" height="200" src="materials/juice.png"></img>
+			</div>
+			<div id="snacks" style="background-color:#CCCCFF">
+				<img width="280" height="200" src="materials/cake.png"></img>
+				<span>Bread and cakes and cookies!</span>
+				<img width="280" height="200" src="materials/bread.png"></img>
+			</div>
+			<div id="local_special" style="background-color:#FFCCFF;">
+				<img width="280" height="200" src="materials/suanlafen.png"></img>
+				<img width="280" height="200" src="materials/cristal dumpling.png"></img>
+			</div>
+		</div>
+		<div class="con" style="display:none;">
+		<div id="common" style="background-color:#E0E0E0;">
+				<a href=file:///D:/WebUI/coe.html><img width="200" height="200" src="materials/santi.jpg"></img></img></a>
+				<span id="text">地球是孤寂的还是身处黑暗森林？</span>
+				<a href=file:///D:/WebUI/coe.html><img width="200" height="200" src="materials/GameOfThrones.jpg"></img></img></a>
+				<span>权利的争夺永无止境</span>
+			</div>
+			<div id="special" style="background-color:#CCCCFF">
+				<span>与三毛一起体验独特沙漠文化</span>
+				<a href=file:///D:/WebUI/coe.html><img width="200" height="200" src="materials/sahara.jpg"></img></img></a>
+				<span> 远离都市的喧嚣，找回心灵的平静<span>
+				<a href=file:///D:/WebUI/coe.html><img width="200" height="200" src="materials/walden.jpg"></img></img></a>
+			</div>
+			<div id="classic" style="background-color:#FFCCFF;">
+				<a href=file:///D:/WebUI/coe.html><img height="200" src="materials/sidamingzhu.jpg"></img></a>
+				<span>勿忘经典！</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
